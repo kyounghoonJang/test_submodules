@@ -1,3 +1,6 @@
 [submodule "modules/sub"]
 	path = modules/sub
 	url = https://github.com/kyounghunJang/kargo-demo
+[submodule "common"]
+	path = common
+	url = https://github.com/kyounghunJang/common-manifests_test
