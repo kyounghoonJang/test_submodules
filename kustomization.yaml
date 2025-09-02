@@ -2,5 +2,8 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-  - common/namespace.yaml # <-- Submodule 안의 파일을 직접 참조하는 핵심 부분!
-  - deployment.yaml
+- common/namespace.yaml # <-- Submodule 안의 파일을 직접 참조하는 핵심 부분!
+- deployment.yaml
+images:
+- name: nginx
+  newTag: 1.25.1
